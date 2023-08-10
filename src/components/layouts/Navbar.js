@@ -6,8 +6,8 @@ function Navbar(){
         <header className="flex h-36 bg-gradient-to-b from-[#FF8E24] to-[#FFC530]">
             <div className="sm:w-[30%] font-principal gap-4 tracking-widest text-white font-bold m-auto flex text-center">
                 <div className="flex flex-col gap-4 hover:scale-110 duration-500 pl-4 sm:pl-8 md:pl-12">
-                    <Link to={"/"}><h1 className="md:text-3xl text-2xl ">SCORPION</h1></Link>
-                    <Link to={"/"}><h1 className="md:text-xl text-md ">ACADEMIA</h1></Link>
+                    <Link to={"/proj-acad"}><h1 className="md:text-3xl text-2xl ">SCORPION</h1></Link>
+                    <Link to={"/proj-acad"}><h1 className="md:text-xl text-md ">ACADEMIA</h1></Link>
                 </div>
             </div>
             <div className="w-[70%] flex">
