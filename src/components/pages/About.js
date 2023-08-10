@@ -1,15 +1,15 @@
-import Card from "../items/Card"
-import styles from "./About.module.css"
-import foto1 from "../../img/rotativa/foto1.PNG"
-import foto2 from "../../img/rotativa/foto2.PNG"
-import foto3 from "../../img/rotativa/foto3.PNG"
-import foto4 from "../../img/rotativa/foto6.PNG"
-import foto5 from "../../img/rotativa/imagem5.PNG"
-import seta1 from "../../img/back.png"
-import seta2 from "../../img/next.png"
+import { MdChevronLeft, MdChevronRight} from 'react-icons/md'
+import {imgData} from "../data/imgData"
 
 function About(){
-    
+    const slideLeft = () => {
+        var slider = document.getElementById('slider')
+        slider.scrollLeft = slider.scrollLeft - 300
+    }
+    const slideRight = () => {
+        var slider = document.getElementById('slider')
+        slider.scrollLeft = slider.scrollLeft + 300
+    }
     return (
         <section className="h-[955px] bg-gradient-to-t from-[#FF8E24] to-[#FFC530]">
             <div className="m-auto flex w-[95%] justify-center items-start h-[600px]">
@@ -28,24 +28,15 @@ function About(){
                 </div>
                 
             </div>
-            <div className="pt-6 flex w-[100%]">
-                    <div className="w-[11%] h-[245px] mt-8 flex items-center pl-10"><img className="h-12 w-12 sm:w-[50px]" alt="seta esquerda" src={seta1}></img></div>                 
-                    <div className={`w-[78%] m-auto  pl-8 gap-x-8 pt-8 h-[350px] ${styles.scroll} flex overflow-x-scroll`}>
-                        <div className={`${styles.teste}`}>
-                            <Card image={foto1}></Card>
-                            <Card image={foto5}></Card>
-                            <Card image={foto3}></Card>
-                                         
-                        </div>
-                        <div className={`${styles.teste}`}>
-                            <Card image={foto4}></Card>
-                            <Card image={foto2}></Card>
-                            <Card image={foto1}></Card>
-                                                     
-                        </div>
+            <div className="pt-6 flex px-6 md:px-16 w-[100%]">
+                    <div onClick={slideLeft} className="h-[245px] mt-8 md:pr-10 flex items-center"><MdChevronLeft className="cursor-pointer opacity-50 hover:opacity-100 duration-500" size={40}></MdChevronLeft></div>                 
+                    <div id="slider" className={`scrollbar-hide m-auto gap-x-16 pt-8 h-[350px]  flex scroll scroll-smooth overflow-x-scroll`}>
+                        {imgData.map((item)=> (
+                            <img className="h-60 hover:scale-110 ease-in-out duration-500 cursor-pointer w-96" src={item.img} alt="/"></img>
+                        ))}
                         
                     </div>
-                    <div className="w-[11%] h-[245px] mt-8 flex items-center justify-end pr-10"><img className="h-12 w-12 sm:w-[50px]" alt="seta esquerda" src={seta2}></img></div> 
+                    <div onClick={slideRight} className="h-[245px] mt-8 md:pl-10 flex items-center"><MdChevronRight className="cursor-pointer opacity-50 hover:opacity-100 duration-500" size={40}></MdChevronRight></div> 
                 </div>
             
         </section>
