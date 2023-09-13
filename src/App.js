@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Home from './components/pages/Home';
+import Home from './pages/Home';
 import Navbar from './components/layouts/Navbar';
-import Contact from './components/pages/Contact';
+import Contact from './pages/Contact';
 import Footer from './components/layouts/Footer';
-import Horario from './components/pages/Horarios';
-import About from './components/pages/About';
+import Horario from './pages/Horarios';
+import About from './pages/About';
 
 
 function App() {
