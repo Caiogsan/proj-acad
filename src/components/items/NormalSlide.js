@@ -1,5 +1,3 @@
-import {FaFacebook, FaInstagram, FaWhatsapp} from 'react-icons/fa'
-
 function NormalSlide(){
     return (
         <div className="h-[620px] w-[90%] rounded flex flex-col sm:flex-row m-auto bg-gray-300 my-12">
