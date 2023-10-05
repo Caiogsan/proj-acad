@@ -1,6 +1,6 @@
 function TimesSlide(){
     return (
-        <div className="m-auto bg-gray-200 mb-10 w-[80%] flex rounded h-[30rem] justify-center">
+        <div className="m-auto bg-gray-200 mb-10 w-[80%] flex rounded h-[30rem] xl:h-[40rem] 2xl:h-[50rem] justify-center">
             <div className="w-[60%] flex flex-col">
                 <div className="h-[80%] p-4">
                     <h1 className="text-xl sm:text-2xl font-bold">Horarios de funcionamentos:</h1>
