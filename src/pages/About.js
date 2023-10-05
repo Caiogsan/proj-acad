@@ -3,9 +3,8 @@ import ImageRoler from '../components/items/ImageRoler'
 
 function About(){
     return (
-        <section className="h-[955px] bg-gradient-to-t from-[#FF8E24] to-[#FFC530]">
+        <section className="h-[1400px] pt-40 bg-gray-600">
             <AboutSlide></AboutSlide>
-            <ImageRoler></ImageRoler>
         </section>
     )
 }

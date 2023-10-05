@@ -1,19 +1,24 @@
+import ImageRoler from "./ImageRoler"
+
 function AboutSlide(){
     return (
-        <div className="m-auto flex w-[95%] justify-center items-start h-[600px]">
-            <div className="h-[600px] border-black border-2 w-[80%] rounded bg-gradient-to-b from-gray-200 flex flex-col justify-between">
-                <div className="md:flex h-[80%] w-[90%] pt-12 m-auto">
-                    <iframe title="maps" className="h-72 w-[80%] m-auto md:m-0 md:w-[500px] w-[50%] rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29504.680476732705!2d-45.48673448916013!3d-22.425824100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb7cad272ac347%3A0x585554a58b724607!2sSCORPION%20ACADEMI!5e0!3m2!1sen!2sbr!4v1686154694795!5m2!1sen!2sbr"></iframe>
-                    <div className="md:w-[50%] h-56 pl-12 py-2 flex flex-col md:justify-between">
-                        <h1 className="font-bold tracking-widest leading-8 ">VENHA CONHECER O NOSSO CENTRO DE TREINAMENTO!</h1>
+        <div className="">
+            <div className="m-auto flex justify-center items-start h-[500px] md:h-[600px]">
+            <div className="lg:h-[600px] md:h-[500px] py-14 md:py-14 lg:py-24 border-black border-2 w-[80%] rounded bg-gradient-to-b from-gray-200 flex flex-col justify-between">
+                <div className="md:flex h-[80%] w-[90%] m-auto">
+                    <iframe title="maps" className="h-72 w-[90%] m-auto md:m-0 md:w-[55%] rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10414.710108372681!2d-42.230621714481586!3d-22.647968913492743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x97051c3ed0c85f%3A0xab7509b2d17c8e0!2sBaixo%20Grande%2C%20S%C3%A3o%20Pedro%20da%20Aldeia%20-%20RJ%2C%2028940-000!5e0!3m2!1spt-BR!2sbr!4v1696533122838!5m2!1spt-BR!2sbr" width="600" height="450" loading="lazy"></iframe>
+                    <div className="md:w-[50%] w-[90%] py-10 h-72 md:pl-12 m-auto flex flex-col md:justify-between">
+                        <h1 className="font-bold pb-2 md:pb-0 tracking-widest leading-8 ">VENHA CONHECER O NOSSO CENTRO DE TREINAMENTO!</h1>
                         <div>
-                            <p className="pb-2 font-bold tracking-widest">Localizado em:</p>
-                            <p className="tracking-widest font-bold text-sm">Av. João Antônio Pereira, 118 - Varginha, Itajubá - MG, 37501-060</p>
+                            <p className="pb-4 font-bold tracking-widest">Localizado em:</p>
+                            <p className="tracking-widest font-bold text-sm">Lorem ipsum, dolor sit amet - consectetur adipiscing elit. 14</p>
                         </div>
                     </div>
                 </div>
-                <h1 className="pb-12 leading-10 h-[30%] lg:text-lg md:w-[90%] m-auto text-center text-xs md:text-sm tracking-widest font-bold">GARANTIMOS EQUIPAMENTOS DE ALTA QUALIDADE E UM ÓTIMO ATENDIMENTO AO CLIENTE! VENHA FAZER PARTE VOCÊ TAMBÊM!!</h1>
+                <h1 className="leading-10 h-[30%] w-[80%] lg:text-lg md:w-[90%] flex items-end just m-auto text-center text-xs md:text-sm tracking-widest font-bold">GARANTIMOS EQUIPAMENTOS DE ALTA QUALIDADE E UM ÓTIMO ATENDIMENTO AO CLIENTE! VENHA FAZER PARTE VOCÊ TAMBÊM!!</h1>
             </div>   
+        </div>
+        <ImageRoler></ImageRoler>
         </div>
     )
 }

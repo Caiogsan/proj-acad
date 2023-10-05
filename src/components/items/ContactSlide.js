@@ -2,10 +2,10 @@ import {FaFacebook, FaInstagram, FaWhatsapp} from 'react-icons/fa'
 
 function ContactSlide(){
     return (
-        <div className="flex w-[90%] h-[720px] m-auto">
+        <div className="flex w-[90%] h-[740px] pb-8 m-auto">
             <div className="bg-gray-300 rounded border-2 border-black border-r-0 w-[50%]">   
                 <form className='m-auto flex flex-col justify-between h-full py-12 w-[80%]'>
-                    <h1 className='text-center font-principal text-2xl'>Envie uma mensagem!</h1>
+                    <h1 className='text-center font-bold text-2xl'>Envie uma mensagem!</h1>
                     <input className='text-sm rounded p-2' type="text" placeholder="Nome"></input>
                     <input className='text-sm rounded p-2' type="email" placeholder="Email"></input>
                     <input className='text-sm rounded p-2' type="text" placeholder="Assunto"></input>
