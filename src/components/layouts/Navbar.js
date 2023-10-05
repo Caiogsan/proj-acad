@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import scorpion from "../../img/scorpion.png"
 
 function Navbar(){
     return (

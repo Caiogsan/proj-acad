@@ -9,8 +9,7 @@ module.exports = {
       backgroundImage: {
         'fundo1': "url('/src/img/new/homepage.jpg')",
         'fundo2': "url('/src/img/new/last-generation.jpg')",
-        'fundo3': "url('/src/img/new/contact.jpg')",
-        'fundo4': "url('/src/img/foto5.PNG')"
+        'fundo3': "url('/src/img/new/contact.jpg')"
       }
     },
   },

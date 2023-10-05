@@ -3,7 +3,7 @@ import ImageRoler from '../components/items/ImageRoler'
 
 function About(){
     return (
-        <section className="h-[1400px] pt-40 bg-gray-600">
+        <section className="lg:h-[1130px] md:h-[1020px] sm:h-[1400px] pt-40 bg-gray-600">
             <AboutSlide></AboutSlide>
         </section>
     )
