@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/proj-acad/static/css/main.4622fbf3.css",
-    "main.js": "/proj-acad/static/js/main.d2e82a0b.js",
-    "static/media/imagem5.PNG": "/proj-acad/static/media/imagem5.f30c5ac8ff2c3f8b6322.PNG",
-    "static/media/capturar.PNG": "/proj-acad/static/media/capturar.5107b778d196505eba98.PNG",
-    "static/media/imagem3.PNG": "/proj-acad/static/media/imagem3.c6d244b252f57347d6f8.PNG",
-    "static/media/foto2.PNG": "/proj-acad/static/media/foto2.055c8828be58092137b5.PNG",
-    "static/media/foto6.PNG": "/proj-acad/static/media/foto6.90c373e9e514dd80dc13.PNG",
-    "static/media/foto3.PNG": "/proj-acad/static/media/foto3.878542f3a18aa2aaf35e.PNG",
-    "static/media/banner.png": "/proj-acad/static/media/banner.bdde1dc9da399053d949.png",
-    "static/media/foto1.PNG": "/proj-acad/static/media/foto1.2b42c4f0d0253ecc5a34.PNG",
-    "static/media/foto5.PNG": "/proj-acad/static/media/foto5.d25205e83266a5e37a2d.PNG",
-    "static/media/scorpion.png": "/proj-acad/static/media/scorpion.5ba7fa2aeeee085de7ee.png",
+    "main.css": "/proj-acad/static/css/main.b9bc5560.css",
+    "main.js": "/proj-acad/static/js/main.77696d7d.js",
+    "static/media/contact.jpg": "/proj-acad/static/media/contact.743a19a897f63464f6bf.jpg",
+    "static/media/row6.jpg": "/proj-acad/static/media/row6.11f6f09cedb10498d9cc.jpg",
+    "static/media/last-generation.jpg": "/proj-acad/static/media/last-generation.5ba788ad84c83f6a949f.jpg",
+    "static/media/roll4.jpg": "/proj-acad/static/media/roll4.589eadef903f3ac60876.jpg",
+    "static/media/roll1.jpg": "/proj-acad/static/media/roll1.94cb91586505c754b2de.jpg",
+    "static/media/homepage.jpg": "/proj-acad/static/media/homepage.67ef7a2622b744ecdaba.jpg",
+    "static/media/row5.jpg": "/proj-acad/static/media/row5.712c061c787a78e9419b.jpg",
+    "static/media/roll3.jpg": "/proj-acad/static/media/roll3.cf526ba80be61316e891.jpg",
+    "static/media/roll2.jpg": "/proj-acad/static/media/roll2.9aa01ff35e93e63a7b4f.jpg",
     "index.html": "/proj-acad/index.html",
-    "main.4622fbf3.css.map": "/proj-acad/static/css/main.4622fbf3.css.map",
-    "main.d2e82a0b.js.map": "/proj-acad/static/js/main.d2e82a0b.js.map"
+    "main.b9bc5560.css.map": "/proj-acad/static/css/main.b9bc5560.css.map",
+    "main.77696d7d.js.map": "/proj-acad/static/js/main.77696d7d.js.map"
   },
   "entrypoints": [
-    "static/css/main.4622fbf3.css",
-    "static/js/main.d2e82a0b.js"
+    "static/css/main.b9bc5560.css",
+    "static/js/main.77696d7d.js"
   ]
 }
