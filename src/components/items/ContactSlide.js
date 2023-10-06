@@ -3,7 +3,7 @@ import {FaFacebook, FaInstagram, FaWhatsapp} from 'react-icons/fa'
 function ContactSlide(){
     return (
         <div className="flex w-[90%] h-[740px] xl:h-[940px] 2xl:h-[1000px] pb-8 m-auto">
-            <div className="bg-gray-300 rounded border-2 border-black border-r-0 w-[50%]">   
+            <div className="bg-gray-300 rounded border-2 border-black sm:border-r-0 w-[100%] sm:w-[50%]">   
                 <form className='m-auto flex flex-col justify-between h-full py-12 w-[80%]'>
                     <h1 className='text-center font-bold text-2xl'>Envie uma mensagem!</h1>
                     <input className='text-sm 2xl:text-lg rounded p-2' type="text" placeholder="Nome"></input>
@@ -18,7 +18,7 @@ function ContactSlide(){
                     </div>
                 </form> 
             </div>
-            <div className="w-[50%] rounded bg-fundo3 bg-no-repeat bg-cover bg-center"></div>
+            <div className="w-[50%] hidden sm:flex rounded bg-fundo3 bg-no-repeat bg-cover bg-center"></div>
         </div>
     )
 }
