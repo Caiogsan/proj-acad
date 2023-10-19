@@ -12,9 +12,9 @@ function ContactSlide(){
                     <textarea placeholder="Mensagem" className="resize-none h-24 2xl:h-40 rounded p-2"></textarea>
                     <button type="submit" className='text-sm 2xl:text-lg rounded hover:bg-yellow-400 duration-500 p-2 bg-white text-black'>Enviar!</button>
                     <div className='flex justify-center items-center gap-12'>
-                        <a href="/" className='text-3xl hover:text-blue-800 duration-500'><FaFacebook></FaFacebook></a>
-                        <a href="/" className='text-3xl hover:text-rose-600 duration-500'><FaInstagram></FaInstagram></a>
-                        <a href="/" className='text-3xl hover:text-[#25D366] duration-500'><FaWhatsapp></FaWhatsapp></a>
+                        <a alt="Facebook" href="/" className='text-3xl hover:text-blue-800 duration-500'><FaFacebook></FaFacebook></a>
+                        <a alt="Instagram" href="/" className='text-3xl hover:text-rose-600 duration-500'><FaInstagram></FaInstagram></a>
+                        <a alt="Wpp" href="/" className='text-3xl hover:text-[#25D366] duration-500'><FaWhatsapp></FaWhatsapp></a>
                     </div>
                 </form> 
             </div>
