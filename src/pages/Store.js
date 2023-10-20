@@ -1,34 +1,47 @@
+import StoreInfo from "../components/items/StoreInfo";
+import StoreNavbar from "../components/items/StoreNavbar";
 import banner from "../img/store/banner.webp";
-import { AiOutlineMenu } from "react-icons/ai";
-import { IoIosArrowDown } from "react-icons/io";
-
+import bannerNutrata from "../img/store/banner_nutrata.webp"
+import { BsInstagram } from "react-icons/bs";
+import { FaShippingFast } from "react-icons/fa";
+import { FiClock } from "react-icons/fi"; 
+import { BiSolidLockAlt } from "react-icons/bi";
 function Store() {
   return (
-    <section className="lg:h-[1130px] md:h-[1020px] sm:h-[1400px] pt-36 bg-gray-600">
-      <div className="h-14 flex bg-neutral-700 items-center px-10">
-        <div className="w-[50%] flex items-center">
-        <div className="flex rounded items-center mr-10 px-2 bg-white h-8 w-64 justify-between">
-          <div className="flex items-center gap-2">
-            <AiOutlineMenu></AiOutlineMenu>
-            <p className="font-semibold text-sm">CATEGORIAS</p>
-          </div>
-          <IoIosArrowDown></IoIosArrowDown>
-        </div>
-        <div>
-          <ul className="flex text-white gap-4 font-bold text-xs">
-            <li className="bg-neutral-950 hover:cursor-pointer p-2 rounded">INÍCIO</li>
-            <li className="hover:bg-neutral-950 hover:cursor-pointer duration-300 p-2 rounded">TODOS OS PRODUTOS</li>
-            <li className="hover:bg-neutral-950 hover:cursor-pointer duration-300 p-2 rounded">COMBOS</li>
-          </ul>
-        </div>
-        </div>
-        <div className="w-[50%] gap-6 flex justify-end">
-            <input type="text" className="pl-2 p-1 rounded w-80 placeholder:text-sm" placeholder="O quê você está buscando hojê?"></input>
-            <button type="submit" className="text-xs px-4 rounded bg-black text-white">PESQUISAR</button>
-        </div>
-      </div>
-
+    <section className="pt-36 bg-gray-600">
+      <StoreNavbar></StoreNavbar>
+      <div className="bg-white">
       <img alt="banner" className="hover:cursor-pointer" src={banner} />
+      <div className="bg-white grid pt-10 pb-20 gap-10 grid-cols-4 grid-rows-1 px-12">
+        <StoreInfo
+          stylesIcon={"text-lg"}
+          titulo={"DEVOLUÇÃO"}
+          subtitulo={"Trocas e devoluções rápidas"}
+          icon={<FiClock />}
+        ></StoreInfo>
+        <StoreInfo
+          stylesIcon={"text-xl"}
+          titulo={"SEGURANÇA"}
+          subtitulo={"Pagamento protegido e seguro."}
+          icon={<BiSolidLockAlt />}
+        ></StoreInfo>
+        <StoreInfo
+          stylesIcon={"text-lg"}
+          titulo={"ATENDIMENTO"}
+          subtitulo={"Fale conosco através do nosso instagram"}
+          icon={<BsInstagram />}
+        ></StoreInfo>
+        <StoreInfo
+          stylesIcon={"text-xl"}
+          titulo={"ENVIO RÁPIDO"}
+          subtitulo={"Envio rápido para todo o Brasil!"}
+          icon={<FaShippingFast />}
+        ></StoreInfo>
+      </div>
+      <div className="bg-white w-[90%] m-auto">
+        <img className="rounded-3xl" alt="nutrata" src={bannerNutrata}></img>    
+      </div>
+      </div>
     </section>
   );
 }
