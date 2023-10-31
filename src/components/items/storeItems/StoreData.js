@@ -3,12 +3,11 @@ export const getData = async () => {
         const response = await fetch('https://academia-database.onrender.com/market', {
             method: 'GET',
             mode: 'cors',
-            // Add other options as needed
         });
 
         if (response.ok) {
             const data = await response.json();
-            return data; // Return the data when the request is successful
+            return data;
         } else {
             console.error('Fetch error:', response.statusText);
             throw new Error(`Error: ${response.status} - ${response.statusText}`);

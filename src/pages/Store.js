@@ -7,6 +7,7 @@ import { FaShippingFast } from "react-icons/fa";
 import { FiClock } from "react-icons/fi";
 import { BiSolidLockAlt } from "react-icons/bi";
 import StoreCardLine from "../components/items/storeItems/StoreCardLine";
+import StoreMostSell from "../components/items/storeItems/StoreMostSell";
 
 function Store() {
   return (
@@ -46,9 +47,10 @@ function Store() {
           src={bannerNutrata}
         ></img>
         <StoreCardLine></StoreCardLine>
-        <div className="h-20">
-          teste
+        <div className="my-10 w-full flex justify-center">
+          <button className="bg-black tracking-wider text-white rounded-full px-10 py-2 font-info font-semibold">CONFIRA A LINHA COMPLETA</button>
         </div>
+        <StoreMostSell></StoreMostSell>
       </div>
     </section>
   );

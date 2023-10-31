@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'principal': ['Rock Salt', 'serif'],
-        'info': ['Dosis', 'sans-serif']
+        'info': ['Dosis', 'sans-serif'],
+        'most': ['Inter', 'sans-serif']
       },
       backgroundImage: {
         'fundo1': "url('/src/img/new/homepage.jpg')",
