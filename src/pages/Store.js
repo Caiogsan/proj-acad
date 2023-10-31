@@ -6,7 +6,7 @@ import { BsInstagram } from "react-icons/bs";
 import { FaShippingFast } from "react-icons/fa";
 import { FiClock } from "react-icons/fi";
 import { BiSolidLockAlt } from "react-icons/bi";
-import StoreCard from "../components/items/storeItems/StoreCard";
+import StoreCardLine from "../components/items/storeItems/StoreCardLine";
 
 function Store() {
   return (
@@ -41,12 +41,13 @@ function Store() {
           ></StoreInfo>
         </div>
         <img
-          className="rounded-3xl w-[90%] m-auto"
+          className="rounded-3xl w-[90%] m-auto mb-10"
           alt="nutrata"
           src={bannerNutrata}
         ></img>
-        <div className="grid pt-8 grid-cols-4 grid-rows-1">
-          <StoreCard></StoreCard>
+        <StoreCardLine></StoreCardLine>
+        <div className="h-20">
+          teste
         </div>
       </div>
     </section>
