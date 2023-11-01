@@ -8,7 +8,7 @@ function StoreCardItem({ image, title, description, rate, cost }) {
       <h1 className="font-info hover:cursor-pointer mt-4 text-xl h-20  font-semibold">{title}</h1>
       <div></div>
       <p className="font-bold mt-12 text-xl">R${cost}</p>
-      <p className="mt-4 h-24">{description}</p>
+      <p className="mt-4 h-24 font-info">{description}</p>
       <div className="flex w-full mt-4 items-center justify-between">
         <button className="flex  font-semibold items-center gap-2 bg-black text-white rounded-full px-16 py-[6px]">
           <AiOutlineShoppingCart className="text-lg"></AiOutlineShoppingCart>

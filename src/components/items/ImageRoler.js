@@ -2,7 +2,6 @@ import { imgData } from "../data/imgData";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 function ImageRoler() {
-  const keys = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   const slideLeft = () => {
     var slider = document.getElementById("slider");
     slider.scrollLeft = slider.scrollLeft - 600;

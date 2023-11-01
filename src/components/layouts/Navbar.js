@@ -13,7 +13,7 @@ function Navbar() {
     <header className=" bg-transparent absolute w-full">
       <div className="h-36 px-6 flex items-center sm:justify-between sm:px-20 w-full">
         <div className=" text-center  tracking-widest text-white font-bold">
-          <div className="flex flex-col gap-2 hover:scale-110 duration-500">
+          <div className="flex flex-col gap-2 hover:scale-105 duration-500">
             <Link to={"/proj-acad"}>
               <h1 className="md:text-4xl text-2xl ">ULTIMATE</h1>
             </Link>
@@ -29,13 +29,13 @@ function Navbar() {
                 Compre <br></br> Online
               </Link>
             </li>
-            <li className="hover:scale-110 duration-500">
+            <li className="hover:scale-105 duration-500">
               <Link to={"/about"}>Sobre</Link>
             </li>
-            <li className="hover:scale-110 duration-500">
+            <li className="hover:scale-105 duration-500">
               <Link to={"/times"}>Horários</Link>
             </li>
-            <li className="hover:scale-110 duration-500">
+            <li className="hover:scale-105 duration-500">
               <Link to={"/contact"}>Contato</Link>
             </li>
           </ul>

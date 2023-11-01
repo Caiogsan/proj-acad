@@ -1,5 +1,4 @@
 import AboutSlide from "../components/items/AboutSlide";
-import ImageRoler from "../components/items/ImageRoler";
 
 function About() {
   return (
