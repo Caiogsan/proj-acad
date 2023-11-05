@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-import { getData } from "./StoreData";
 import StoreCardItem from "./StoreCardItem";
 
 function StoreCardLine({

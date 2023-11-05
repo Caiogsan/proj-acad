@@ -1,6 +1,6 @@
 import { AiOutlineShoppingCart, AiOutlineHeart } from "react-icons/ai";
 
-function StoreCardItem({ image, title, description, rate, cost }) {
+function StoreCardItem({ image, title, description, cost }) {
   return (
     <div className="hover:scale-105 p-5 rounded-md duration-300 hover:shadow-[0_0_7px_1px_rgba(0,0,0,0.3)]">
       <img src={image} className="hover:cursor-pointer" alt="item-img"></img>

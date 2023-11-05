@@ -1,5 +1,5 @@
-import StoreCardLine from "./StoreCardLine";
-import { StoreCardContext } from "./StoreCardContext";
+import StoreCardLine from "../../items/storeItems/StoreCardLine";
+import { StoreCardContext } from "../../items/storeItems/StoreCardContext";
 import { useContext } from "react";
 
 function StoreMostSell() {
