@@ -1,11 +1,12 @@
-
 import { AiOutlineShoppingCart, AiOutlineHeart } from "react-icons/ai";
 
 function StoreCardItem({ image, title, description, rate, cost }) {
   return (
     <div className="hover:scale-105 p-5 rounded-md duration-300 hover:shadow-[0_0_7px_1px_rgba(0,0,0,0.3)]">
       <img src={image} className="hover:cursor-pointer" alt="item-img"></img>
-      <h1 className="font-info hover:cursor-pointer mt-4 text-xl h-20  font-semibold">{title}</h1>
+      <h1 className="font-info hover:cursor-pointer mt-4 text-xl h-20  font-semibold">
+        {title}
+      </h1>
       <div></div>
       <p className="font-bold mt-12 text-xl">R${cost}</p>
       <p className="mt-4 h-24 font-info">{description}</p>

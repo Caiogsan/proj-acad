@@ -2,10 +2,11 @@ import StoreCardLine from "./StoreCardLine";
 import { useContext } from "react";
 import { StoreCardContext } from "./StoreCardContext";
 
-function StoreSpecialCombo(){
-    const {image, title, description, cost, rate} = useContext(StoreCardContext)
-    return (
-        <div className="px-6 mx-4">
+function StoreSpecialCombo() {
+  const { image, title, description, cost, rate } =
+    useContext(StoreCardContext);
+  return (
+    <div className="px-6 mx-4">
       <div className="text-center text-xs font-most pt-16 pb-4">
         <span className="bg-orange-100 rounded px-2 text-orange-500 py-1">
           CONFIRA NOSSOS COMBOS ESPECIAIS
@@ -43,7 +44,7 @@ function StoreSpecialCombo(){
         costItem4={cost[7]}
       ></StoreCardLine>
     </div>
-    )
+  );
 }
 
-export default StoreSpecialCombo
+export default StoreSpecialCombo;

@@ -17,6 +17,8 @@ function App() {
     const [image, setImage] = useState([])
     const [description, setDescription] = useState([])
     const [title, setTitle] = useState([])
+    const [openLogin, setOpenLogin] = useState(false)
+    const openPage = () => setOpenLogin(!openLogin)
 
     const getNewData = async() => {
         const dados = await getData()
@@ -46,7 +48,7 @@ function App() {
         getSpecificData()
     }, [data / 2])
   return (
-    <StoreCardContext.Provider value={{image, cost, description, title, rate}}>
+    <StoreCardContext.Provider value={{image, cost, description, title, rate, openLogin, openPage}}>
     <Router>
       <Navbar></Navbar>        
       <Routes>

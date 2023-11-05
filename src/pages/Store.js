@@ -13,12 +13,13 @@ import { useContext } from "react";
 import { StoreCardContext } from "../components/items/storeItems/StoreCardContext";
 import StoreSpecialCombo from "../components/items/storeItems/StoreSpecialCombo";
 import StoreNewsLetter from "../components/items/storeItems/StoreNewsletter";
+import FooterStore from "../components/items/storeItems/FooterStore";
 
 function Store() {
-  const { image, title, cost, description, rate } =
+  const { image, title, cost, description, rate, openLogin } =
     useContext(StoreCardContext);
   return (
-    <section className="pt-36 bg-gray-600">
+    <section className={`pt-36 bg-neutral-800`}>
       <StoreNavbar></StoreNavbar>
       <div className="bg-white">
         <img alt="banner" className="hover:cursor-pointer" src={banner} />
@@ -85,6 +86,7 @@ function Store() {
           </button>
         </div>
         <StoreNewsLetter></StoreNewsLetter>
+        <FooterStore></FooterStore>
       </div>
     </section>
   );

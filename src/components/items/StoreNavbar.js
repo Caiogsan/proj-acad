@@ -4,7 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 function StoreNavbar() {
   return (
     <div>
-      <div className="h-14 flex bg-neutral-700 items-center px-10">
+      <div className={`h-14 flex bg-neutral-700 items-center px-10`}>
         <div className="w-[50%] flex items-center">
           <div className="flex rounded items-center mr-10 px-2 bg-white h-8 w-64 justify-between">
             <div className="flex items-center gap-2">
@@ -31,7 +31,7 @@ function StoreNavbar() {
           <input
             type="text"
             className="pl-2 p-1 rounded w-80 placeholder:text-sm"
-            placeholder="O quê você está buscando hojê?"
+            placeholder="O que você está buscando hoje?"
           ></input>
           <button
             type="submit"

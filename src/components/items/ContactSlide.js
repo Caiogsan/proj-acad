@@ -2,24 +2,24 @@ import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 function ContactSlide() {
   return (
-    <div className="flex w-[90%] h-[740px] xl:h-[940px] 2xl:h-[1000px] pb-8 m-auto">
+    <div className="flex w-[90%] h-[740px] xl:h-[840px] 2xl:h-[1000px] pb-8 m-auto">
       <div className="bg-gray-300 rounded border-2 border-black sm:border-r-0 w-[100%] sm:w-[50%]">
-        <form className="m-auto flex flex-col justify-between h-full py-12 w-[80%]">
+        <form className="m-auto flex flex-col justify-between h-full 2xl:py-12 py-14 w-[80%]">
           <h1 className="text-center font-bold text-2xl">
             Envie uma mensagem!
           </h1>
           <input
-            className="text-sm 2xl:text-lg rounded p-2"
+            className="bg-gray-100 rounded border-[1px] h-10 p-2 border-gray-300 shadow-inner"
             type="text"
             placeholder="Nome"
           ></input>
           <input
-            className="text-sm 2xl:text-lg rounded p-2"
+            className="bg-gray-100 rounded border-[1px] h-10 p-2 border-gray-300 shadow-inner"
             type="email"
             placeholder="Email"
           ></input>
           <input
-            className="text-sm 2xl:text-lg rounded p-2"
+            className="bg-gray-100 rounded border-[1px] h-10 p-2 border-gray-300 shadow-inner"
             type="text"
             placeholder="Assunto"
           ></input>
@@ -37,21 +37,21 @@ function ContactSlide() {
             <a
               alt="Facebook"
               href="/"
-              className="text-3xl hover:text-blue-800 duration-500"
+              className="text-3xl hover:text-blue-800 duration-300"
             >
               <FaFacebook></FaFacebook>
             </a>
             <a
               alt="Instagram"
               href="/"
-              className="text-3xl hover:text-rose-600 duration-500"
+              className="text-3xl hover:text-rose-600 duration-300"
             >
               <FaInstagram></FaInstagram>
             </a>
             <a
               alt="Wpp"
               href="/"
-              className="text-3xl hover:text-[#25D366] duration-500"
+              className="text-3xl hover:text-[#25D366] duration-300"
             >
               <FaWhatsapp></FaWhatsapp>
             </a>
