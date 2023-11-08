@@ -14,8 +14,8 @@ function AboutSlide() {
               height="450"
               loading="lazy"
             ></iframe>
-            <div className="md:w-[50%] w-[90%] py-10 h-72 md:pl-12 m-auto flex flex-col md:justify-between">
-              <h1 className="font-bold pb-4 sm:pb-2 md:pb-0 text-sm sm:text-md tracking-widest leading-8 ">
+            <div className="md:w-[50%] w-[90%] items-start h-full md:pl-12 m-auto flex flex-col ">
+              <h1 className="font-bold pb-4 sm:pb-2 md:pb-0 text-sm mb-6 sm:text-md tracking-widest leading-8 ">
                 VENHA CONHECER O NOSSO CENTRO DE TREINAMENTO!
               </h1>
               <div>

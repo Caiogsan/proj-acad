@@ -43,3 +43,30 @@ export const getLogin = async () => {
     throw error;
   }
 };
+
+export const postRegister = async (formData) => {
+  try {
+    const response = await fetch("https://gym-login-database.onrender.com/login389212", {
+      method: "POST",
+      mode: "cors",
+      headers: {
+        'Content-type': 'application/json'
+      },
+      body: formData, // O objeto FormData contendo os dados do formulário
+    });
+
+    if (response.ok) {
+      const contentType = response.headers.get('content-type');
+      if (contentType && contentType.includes('application/json')) {
+        const data = await response.json();
+        return data;
+      } else {
+        
+        return 'Non-JSON response';
+      }    
+    }
+  } catch (error) {
+    console.error("Fetch error:", error);
+    throw error;
+  }
+};

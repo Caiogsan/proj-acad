@@ -4,7 +4,7 @@ import { StoreCardContext } from "../../items/storeItems/StoreCardContext";
 import { AiOutlineGift } from "react-icons/ai";
 
 function StoreSpecialCombo() {
-  const { image, title, description, cost, rate } =
+  const { image, title, description, cost, username } =
     useContext(StoreCardContext);
   return (
     <div className="px-6 mx-4">
@@ -45,7 +45,7 @@ function StoreSpecialCombo() {
         costItem4={cost[7]}
       ></StoreCardLine>
       <div className="my-10 w-full flex justify-center">
-        <button className="bg-black flex gap-2 items-center tracking-wider text-white rounded-full px-8 mb-10 py-2 font-info font-semibold">
+        <button onClick={() => {console.log('teste', username)}} className="bg-black flex gap-2 items-center tracking-wider text-white rounded-full px-8 mb-10 py-2 font-info font-semibold">
           <AiOutlineGift></AiOutlineGift> CONFIRA TODOS OS COMBOS
         </button>
       </div>

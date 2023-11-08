@@ -15,9 +15,6 @@ function NavbarMenu({ menu, setMenu }) {
           <Link to={"/about"}>Compre Online</Link>
         </li>
         <li>
-          <Link to={"/about"}>Sobre</Link>
-        </li>
-        <li>
           <Link to={"/times"}>Horários</Link>
         </li>
         <li>

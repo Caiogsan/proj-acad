@@ -2,6 +2,8 @@ import { useState } from "react";
 import { AiOutlineUser, AiFillCloseCircle } from "react-icons/ai";
 import { useContext } from "react";
 import { StoreCardContext } from "../../items/storeItems/StoreCardContext";
+import Login from "./Login";
+import Register from "./Register";
 
 function UserInfo() {
   const { openPage } = useContext(StoreCardContext);
@@ -33,6 +35,7 @@ function UserInfo() {
             <h2>CADASTRAR</h2>
           </div>
         </div>
+        {loginRegister ? <Login></Login> : <Register></Register>}
       </div>
       <AiFillCloseCircle
         onClick={() => {

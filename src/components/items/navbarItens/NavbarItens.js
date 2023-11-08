@@ -10,9 +10,6 @@ function NavbarItens({ handleClick }) {
           <Link to={"/store"}>Loja</Link>
         </li>
         <li className="hover:scale-105 duration-300">
-          <Link to={"/about"}>Sobre</Link>
-        </li>
-        <li className="hover:scale-105 duration-300">
           <Link to={"/times"}>Horários</Link>
         </li>
         <li className="hover:scale-105 duration-300">
