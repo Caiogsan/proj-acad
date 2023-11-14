@@ -2,9 +2,8 @@ import { useState } from "react";
 import { useContext } from "react";
 import { StoreCardContext } from "../../items/storeItems/StoreCardContext";
 function Login() {
-  const { username, email, password, openPage } = useContext(StoreCardContext);
+  const { username, email, password, openPage, setIsLogged, changeTransition } = useContext(StoreCardContext);
   const [warning, setWarning] = useState("");
-  const [logged, setLogged] = useState(false);
   const [userEmail, setUserEmail] = useState("");
   const [pass, setPass] = useState("");
   const [user, setUser] = useState("");
@@ -33,7 +32,8 @@ function Login() {
     e.preventDefault();
 
     if (allGood) {
-      setLogged(true);
+      changeTransition()
+      setIsLogged(true);
       setWarning("");
       openPage();
     } else if (noUserEmail) {

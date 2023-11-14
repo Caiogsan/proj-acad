@@ -1,4 +1,5 @@
 import ContactSlide from "../components/items/ContactSlide";
+import React from "react";
 
 function Contact() {
   return (

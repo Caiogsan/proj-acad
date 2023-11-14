@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { AiFillCaretRight } from "react-icons/ai";
 
-function NavbarMenu({ menu, setMenu }) {
+function NavbarMenuSmallScreen({ menu, setMenu }) {
   function switchMenu() {
     setMenu(!menu);
   }
@@ -25,4 +25,4 @@ function NavbarMenu({ menu, setMenu }) {
   );
 }
 
-export default NavbarMenu;
+export default NavbarMenuSmallScreen;

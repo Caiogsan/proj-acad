@@ -6,7 +6,7 @@ import Login from "./Login";
 import Register from "./Register";
 
 function UserInfo() {
-  const { openPage } = useContext(StoreCardContext);
+  const { openPage, changeTransition } = useContext(StoreCardContext);
   const [loginRegister, setLoginRegister] = useState(true);
   return (
     <div>
@@ -39,7 +39,8 @@ function UserInfo() {
       </div>
       <AiFillCloseCircle
         onClick={() => {
-          openPage();
+          openPage()
+          changeTransition()
         }}
         className="absolute right-[415px] top-6 text-5xl hover:cursor-pointer text-white"
       ></AiFillCloseCircle>

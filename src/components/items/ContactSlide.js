@@ -1,6 +1,7 @@
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
-function ContactSlide() {
+function ContactSlide () {
+  
   return (
     <div className="flex w-[90%] h-[740px] xl:h-[840px] 2xl:h-[1000px] pb-8 m-auto">
       <div className="bg-gray-300 rounded border-2 border-black sm:border-r-0 w-[100%] sm:w-[50%]">
@@ -34,25 +35,13 @@ function ContactSlide() {
             Enviar!
           </button>
           <div className="flex justify-center items-center gap-12">
-            <a
-              alt="Facebook"
-              href="/"
-              className="text-3xl hover:text-blue-800 duration-300"
-            >
+            <a href="/" className="text-3xl hover:text-blue-800 duration-300">
               <FaFacebook></FaFacebook>
             </a>
-            <a
-              alt="Instagram"
-              href="/"
-              className="text-3xl hover:text-rose-600 duration-300"
-            >
+            <a href="/" className="text-3xl hover:text-rose-600 duration-300">
               <FaInstagram></FaInstagram>
             </a>
-            <a
-              alt="Wpp"
-              href="/"
-              className="text-3xl hover:text-[#25D366] duration-300"
-            >
+            <a href="/" className="text-3xl hover:text-[#25D366] duration-300">
               <FaWhatsapp></FaWhatsapp>
             </a>
           </div>
@@ -61,6 +50,6 @@ function ContactSlide() {
       <div className="w-[50%] hidden sm:flex rounded bg-fundo3 bg-no-repeat bg-cover bg-center"></div>
     </div>
   );
-}
+};
 
 export default ContactSlide;
