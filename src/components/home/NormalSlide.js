@@ -1,4 +1,4 @@
-import imageSlide from "../../img/new/last-generation.jpg";
+import imageSlide from "../../assets/new/last-generation.jpg";
 
 function NormalSlide() {
   return (

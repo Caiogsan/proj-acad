@@ -1,35 +1,37 @@
 import { useState } from "react";
 import { useContext } from "react";
-import { StoreCardContext } from "../../items/storeItems/StoreCardContext";
+import { StoreCardContext } from "../../data/StoreCardContext";
 
 function Register() {
-  const { username, email, password, openPage, postRegister  } = useContext(StoreCardContext);
+  const { username, email, postRegister  } = useContext(StoreCardContext);
   const [warning, setWarning] = useState("");
-  const [logged, setLogged] = useState(false);
-  const [em, setEm] = useState("");
-  const [pass, setPass] = useState("");
-  const [user, setUser] = useState("");
-
   const [formData, setFormData] = useState({
     email: "",
     username: "",
     password: ""
   })
-
+  const usernameOk = username.includes(formData.username)
+  const emailOk = email.includes(formData.email)
   const handleSubmit = async(e) => {
     e.preventDefault()
 
-    try {
-      const formDataJSON = JSON.stringify(formData)
-      
-      const response = await postRegister(formDataJSON)
-      
-      
-    } catch (error) {
-      console.log("error :",  error)
+    if(usernameOk){
+      setWarning('Nome de usuário ja existe')
+    } else if (emailOk){
+      setWarning('Email ja existe')
+    } else {
+      try {
+        const formDataJSON = JSON.stringify(formData)
+        
+        const response = await postRegister(formDataJSON)
+        setWarning('Registrado')
+        
+      } catch (error) {
+        console.log("error :",  error)
+      }
     }
 
-    setWarning('Registrado')
+    
     
   }
 
@@ -41,6 +43,7 @@ function Register() {
       <form name="register" onSubmit={handleSubmit} className="flex gap-3 flex-col w-80 font-most">
         <label htmlFor="user">Nome de Usuário</label>
         <input
+        required
           onChange={(e) => {
             setFormData({
               ...formData,
@@ -54,6 +57,7 @@ function Register() {
         ></input>
         <label htmlFor="email">Email</label>
         <input
+        required
            onChange={(e) => {
             setFormData({
               ...formData,
@@ -67,6 +71,7 @@ function Register() {
         ></input>
         <label htmlFor="password">Senha</label>
         <input
+        required
            onChange={(e) => {
             setFormData({
               ...formData,

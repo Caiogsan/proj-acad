@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { useContext } from "react";
-import { StoreCardContext } from "../../items/storeItems/StoreCardContext";
+import { StoreCardContext } from "../../data/StoreCardContext";
 function Login() {
   const { username, email, password, openPage, setIsLogged, changeTransition } = useContext(StoreCardContext);
   const [warning, setWarning] = useState("");
   const [userEmail, setUserEmail] = useState("");
   const [pass, setPass] = useState("");
-  const [user, setUser] = useState("");
+  
   // Check if user and pass exist
   const allGood =
     (username.includes(userEmail) || email.includes(userEmail)) &&
@@ -30,7 +30,7 @@ function Login() {
 
   const checkLogin = (e) => {
     e.preventDefault();
-
+    
     if (allGood) {
       changeTransition()
       setIsLogged(true);

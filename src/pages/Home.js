@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import ContactSlide from "../components/items/ContactSlide";
-import NormalSlide from "../components/items/NormalSlide";
+import ContactSlide from "../components/contact/ContactSlide";
+import NormalSlide from "../components/home/NormalSlide";
 
 function Home() {
   return (

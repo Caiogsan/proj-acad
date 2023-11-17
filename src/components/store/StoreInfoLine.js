@@ -1,4 +1,4 @@
-import StoreInfo from "../../items/storeItems/StoreInfo";
+import StoreInfo from "../../itens/store/StoreInfo";
 import { FaShippingFast } from "react-icons/fa";
 import { FiClock } from "react-icons/fi";
 import { BsInstagram } from "react-icons/bs";

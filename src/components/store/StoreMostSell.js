@@ -1,9 +1,9 @@
-import StoreCardLine from "../../items/storeItems/StoreCardLine";
-import { StoreCardContext } from "../../items/storeItems/StoreCardContext";
+import StoreCardLine from "../../itens/store/StoreCardLine";
+import { StoreCardContext } from "../../data/StoreCardContext";
 import { useContext } from "react";
 
 function StoreMostSell() {
-  const { image, cost, title, rate, description } =
+  const { image, cost, title, description } =
     useContext(StoreCardContext);
   return (
     <div className="bg-gray-50 py-16 px-6 mx-4">

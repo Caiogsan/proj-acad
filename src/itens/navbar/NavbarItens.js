@@ -1,7 +1,7 @@
 import { AiOutlineUser } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import userImage from "../../../img/login/user1.png";
-import { StoreCardContext } from "../storeItems/StoreCardContext";
+import userImage from "../../assets/login/user1.png";
+import { StoreCardContext } from "../../data/StoreCardContext";
 import { useContext, useRef } from "react";
 import NavbarMenuLoggedIn from "./NavbarMenuLoggedIn";
 import { animated } from "react-spring";
@@ -18,7 +18,7 @@ function NavbarItens({ handleClick }) {
     changeTransition,
     openPage,
   } = useContext(StoreCardContext);
-
+  
   return (
     <div className="hidden sm:flex">
       <ul className="flex gap-10  md:gap-16 sm:gap-12 gap-8 lg:gap-20 lg:pl-8 sm:gap-10 md:gap-16 text-white font-bold items-center md:pl-20 sm:pl-16 pl-4">

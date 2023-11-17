@@ -1,13 +1,13 @@
 // USED REACT-SPRING FOR ANIMATION
 
 import { AiOutlineMenu } from "react-icons/ai";
-import NavbarMenuSmallScreen from "../items/navbarItens/NavbarMenuSmallScreen";
+import NavbarMenuSmallScreen from "../itens/navbar/NavbarMenuSmallScreen";
 import UserInfo from "./login_register/UserInfo";
-import { StoreCardContext } from "../items/storeItems/StoreCardContext";
+import { StoreCardContext } from "../data/StoreCardContext";
 import { useContext } from "react";
 import { animated } from "react-spring";
-import NavbarItens from "../items/navbarItens/NavbarItens";
-import NavbarLogo from "../items/navbarItens/NavbarLogo";
+import NavbarItens from "../itens/navbar/NavbarItens";
+import NavbarLogo from "../itens/navbar/NavbarLogo";
 
 function Navbar() {
   const {
@@ -20,7 +20,7 @@ function Navbar() {
   } = useContext(StoreCardContext);
   return (
     <header className=" bg-transparent max-w-100vw absolute w-full">
-      <div className={`absolute right-0`}>
+      <div className={`absolute fixed right-0`}>
         {transition((style, item) =>
           item === true ? (
             <animated.div style={style}>
@@ -37,7 +37,7 @@ function Navbar() {
         <NavbarLogo></NavbarLogo>
         <NavbarItens
           handleClick={() => {
-            openPage();
+            
             changeTransition();
           }}
         ></NavbarItens>

@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import StoreCardLine from "../../items/storeItems/StoreCardLine";
-import { StoreCardContext } from "../../items/storeItems/StoreCardContext";
+import StoreCardLine from "../../itens/store/StoreCardLine";
+import { StoreCardContext } from "../../data/StoreCardContext";
 
 function NutrataProductsLine() {
   const { image, title, cost, description } = useContext(StoreCardContext);

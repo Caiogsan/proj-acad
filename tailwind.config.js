@@ -9,9 +9,9 @@ module.exports = {
         'most': ['Inter', 'sans-serif']
       },
       backgroundImage: {
-        'fundo1': "url('/src/img/new/homepage.jpg')",
-        'fundo2': "url('/src/img/new/last-generation.jpg')",
-        'fundo3': "url('/src/img/new/contact.jpg')"
+        'fundo1': "url('/src/assets/new/homepage.jpg')",
+        'fundo2': "url('/src/assets/new/last-generation.jpg')",
+        'fundo3': "url('/src/assets/new/contact.jpg')"
       }
     },
   },

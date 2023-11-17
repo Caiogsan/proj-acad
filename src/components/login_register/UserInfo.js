@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AiOutlineUser, AiFillCloseCircle } from "react-icons/ai";
 import { useContext } from "react";
-import { StoreCardContext } from "../../items/storeItems/StoreCardContext";
+import { StoreCardContext } from "../../data/StoreCardContext";
 import Login from "./Login";
 import Register from "./Register";
 
@@ -9,8 +9,8 @@ function UserInfo() {
   const { openPage, changeTransition } = useContext(StoreCardContext);
   const [loginRegister, setLoginRegister] = useState(true);
   return (
-    <div>
-      <div className="bg-white z-10 gap-2  flex flex-col items-center px-5 py-7 h-screen absolute right-0 w-[400px]">
+    <div className=" fixed">
+      <div className="bg-white z-10 gap-2 fixed flex flex-col items-center px-5 py-7 h-screen absolute right-0 w-[400px]">
         <AiOutlineUser className="text-3xl text-gray-600"></AiOutlineUser>
         <h1 className="font-most text-gray-600">MINHA CONTA</h1>
         <div className="flex mt-8 font-most text-sm w-full">

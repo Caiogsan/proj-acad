@@ -1,6 +1,6 @@
-import StoreCardLine from "../../items/storeItems/StoreCardLine";
+import StoreCardLine from "../../itens/store/StoreCardLine";
 import { useContext } from "react";
-import { StoreCardContext } from "../../items/storeItems/StoreCardContext";
+import { StoreCardContext } from "../../data/StoreCardContext";
 import { AiOutlineGift } from "react-icons/ai";
 
 function StoreSpecialCombo() {

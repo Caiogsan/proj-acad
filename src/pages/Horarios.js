@@ -1,4 +1,4 @@
-import TimesSlide from "../components/items/TimesSlide";
+import TimesSlide from "../components/horarios/TimesSlide";
 
 function Horario() {
   return (

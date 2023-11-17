@@ -1,17 +1,17 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Navbar from "./components/layouts/Navbar";
+import Navbar from "./components/Navbar";
 import Contact from "./pages/Contact";
-import Footer from "./components/layouts/Footer";
+import Footer from "./components/Footer";
 import Horario from "./pages/Horarios";
 import Store from "./pages/Store";
-import { StoreCardContext } from "./components/items/storeItems/StoreCardContext";
+import { StoreCardContext } from "./data/StoreCardContext";
 import { useEffect, useState } from "react";
 import {
   getData,
   getLogin,
   postRegister,
-} from "./components/items/storeItems/StoreData";
+} from "./data/StoreData";
 import { useTransition } from "react-spring";
 import React from "react";
 

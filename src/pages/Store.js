@@ -1,12 +1,12 @@
-import StoreNavbar from "../components/layouts/store/StoreNavbar";
-import banner from "../img/store/banner.webp";
-import bannerNutrata from "../img/store/banner_nutrata.webp";
-import StoreMostSell from "../components/layouts/store/StoreMostSell";
-import StoreSpecialCombo from "../components/layouts/store/StoreSpecialCombo";
-import StoreNewsLetter from "../components/layouts/store/StoreNewsletter";
-import FooterStore from "../components/items/storeItems/FooterStore";
-import InfoLine from "../components/layouts/store/StoreInfoLine";
-import NutrataProductsLine from "../components/layouts/store/NutrataProductsLine";
+import StoreNavbar from "../components/store/StoreNavbar";
+import banner from "../assets/store/banner.webp";
+import bannerNutrata from "../assets/store/banner_nutrata.webp";
+import StoreMostSell from "../components/store/StoreMostSell";
+import StoreSpecialCombo from "../components/store/StoreSpecialCombo";
+import StoreNewsLetter from "../components/store/StoreNewsletter";
+import FooterStore from "../components/store/FooterStore";
+import InfoLine from "../components/store/StoreInfoLine";
+import NutrataProductsLine from "../components/store/NutrataProductsLine";
 
 function Store() {
   return (
