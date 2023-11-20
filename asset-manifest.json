@@ -1,22 +1,19 @@
 {
   "files": {
-    "main.css": "/proj-acad/static/css/main.63537840.css",
-    "main.js": "/proj-acad/static/js/main.1d1945d9.js",
+    "main.css": "/proj-acad/static/css/main.6bb9ac6a.css",
+    "main.js": "/proj-acad/static/js/main.8e574409.js",
     "static/media/contact.jpg": "/proj-acad/static/media/contact.743a19a897f63464f6bf.jpg",
-    "static/media/row6.jpg": "/proj-acad/static/media/row6.11f6f09cedb10498d9cc.jpg",
     "static/media/last-generation.jpg": "/proj-acad/static/media/last-generation.5ba788ad84c83f6a949f.jpg",
-    "static/media/roll4.jpg": "/proj-acad/static/media/roll4.589eadef903f3ac60876.jpg",
-    "static/media/roll1.jpg": "/proj-acad/static/media/roll1.94cb91586505c754b2de.jpg",
     "static/media/homepage.jpg": "/proj-acad/static/media/homepage.67ef7a2622b744ecdaba.jpg",
-    "static/media/row5.jpg": "/proj-acad/static/media/row5.712c061c787a78e9419b.jpg",
-    "static/media/roll3.jpg": "/proj-acad/static/media/roll3.cf526ba80be61316e891.jpg",
-    "static/media/roll2.jpg": "/proj-acad/static/media/roll2.9aa01ff35e93e63a7b4f.jpg",
+    "static/media/banner.webp": "/proj-acad/static/media/banner.826ea02a7212b940bf24.webp",
+    "static/media/banner_nutrata.webp": "/proj-acad/static/media/banner_nutrata.09dc0ac694dcf50ef149.webp",
+    "static/media/user1.png": "/proj-acad/static/media/user1.2a873b79d9948cfa71d1.png",
     "index.html": "/proj-acad/index.html",
-    "main.63537840.css.map": "/proj-acad/static/css/main.63537840.css.map",
-    "main.1d1945d9.js.map": "/proj-acad/static/js/main.1d1945d9.js.map"
+    "main.6bb9ac6a.css.map": "/proj-acad/static/css/main.6bb9ac6a.css.map",
+    "main.8e574409.js.map": "/proj-acad/static/js/main.8e574409.js.map"
   },
   "entrypoints": [
-    "static/css/main.63537840.css",
-    "static/js/main.1d1945d9.js"
+    "static/css/main.6bb9ac6a.css",
+    "static/js/main.8e574409.js"
   ]
 }
