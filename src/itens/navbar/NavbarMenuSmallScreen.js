@@ -12,7 +12,7 @@ function NavbarMenuSmallScreen({ menu, setMenu }) {
           <AiFillCaretRight onClick={switchMenu}></AiFillCaretRight>
         </li>
         <li>
-          <Link to={"/about"}>Compre Online</Link>
+          <Link to={"/store"}>Loja</Link>
         </li>
         <li>
           <Link to={"/times"}>Horários</Link>
