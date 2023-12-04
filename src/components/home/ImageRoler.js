@@ -1,4 +1,4 @@
-import { imgData } from "../data/imgData";
+import { imgData } from "../../data/imgData";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 function ImageRoler() {
